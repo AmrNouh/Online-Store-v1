@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../CSS/animate.css" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link type="image/x-icon" rel="shortcut icon" href="../assets/blogo.svg" />
+</head>
+
+<body>
+  <div id="header">
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img src="../assets/logo3.png" id="logo" />
+        <label class="navbar-logo-label" for="navbar-logo"><span class="inner-style">On</span>line
+          <span class="inner-style">St</span>ore</label>
+      </div>
+      <div class="navbar-menu">
+        <a class="navbar-links" href="#">Home</a>
+        <a class="navbar-links" href="./About.html">About</a>
+        <a class="navbar-links" href="./ContactUs.html">Contact Us</a>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="slider-middle">
+        <div class="slider-left" onclick="moveSlide(-1)">&#10094;</div>
+        <div class="slider-right" onclick="moveSlide(1)">&#10095;</div>
+      </div>
+      <div class="slider-buttom" onmouseover="stopSlideshow()" onmouseleave="slideShow()">
+        <span class="slider-nav" onclick="slider(5)"></span>
+        <span class="slider-nav" onclick="slider(1)"></span>
+        <span class="slider-nav" onclick="slider(2)"></span>
+      </div>
+    </div>
+  </div>
+  <div id="body">
+    <div class="navigator">
+      <div class="navigator-top">
+        <h2 id="navigator-top-categories">Categories</h2>
+        <span id="navigator-title">Browse 100+ Top Products In Our Store.</span>
+      </div>
+      <div class="navigator-links-container">
+        <button type="submit" class="navigator-links" id="0" onclick="loadItems(this.id)">
+          <label class="navigator-label"> All Categories </label>
+        </button>
+        <button type="submit" class="navigator-links" id="1" onclick="loadItems(this.id)">
+          <!-- <img class=" navigator-image" src="../assets/phone.png" alt="phone image" /> -->
+          <label class="navigator-label" for="">
+            Phones
+            <span class="navigator-label-items">(#)</span>
+          </label>
+        </button>
+        <button type="submit" class="navigator-links" id="2" onclick="loadItems(this.id)">
+          <!-- <img class=" navigator-image" src="../assets/laptop.png" alt="Laptop Image" /> -->
+          <label class="navigator-label" for="">
+            Labtops
+            <span class="navigator-label-items">(#)</span>
+          </label>
+        </button>
+        <button type="submit" class="navigator-links" id="3" onclick="loadItems(this.id)">
+          <!-- <img class=" navigator-image" src="../assets/makeup.png" alt="Makeup Image" /> -->
+          <label class="navigator-label" for="">
+            Makeup
+            <span class="navigator-label-items">(#)</span>
+          </label>
+        </button>
+        <button type="submit" class="navigator-links" id="4" onclick="loadItems(this.id)">
+          <!-- <img class=" navigator-image" src="../assets/car.png" alt="Car Image" /> -->
+          <label class="navigator-label" for="">
+            Cars
+            <span class="navigator-label-items">(#)</span>
+          </label>
+        </button>
+      </div>
+      <div id="cards" class="wow bounceInLeft">
+        <div class="item">
+          <div class="card-top">
+            <img class="card-top-img" src="../assets/Laptops/1.jpg" alt="item image" />
+            <span id="fav" class="material-icons"> favorite </span>
+          </div>
+          <div class="card-details">
+            <span class="card-product-name">Product Name</span>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+              velit?
+            </p>
+            <div>
+              <span class="card-price">Price:</span>
+              <span class="card-price-money">400 $</span>
+              <span class="card-price-money-dicount"><del>1999 $</del></span>
+            </div>
+            <div class="card-buy">
+              <span id="cart" class="material-icons"> shopping_cart </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="moreItem">
+        <button id="loadMore">DISCOVER MORE</button>
+      </div>
+    </div>
+    <div class="customer-view">
+      <div class="title-section">
+        <label class="customer-view-title">Customer Review</label>
+        <p class="customer-view-para">Our Customer Say About Us</p>
+      </div>
+      <div class="customer-card">
+        <img class="avater" src="../assets/Persons/pic-1.png" alt="Person Image" />
+        <label class="customer-Name">Evan Olsen</label>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum
+          sapiente atque, libero
+        </p>
+      </div>
+      <div class="customer-card">
+        <img class="avater" src="../assets/Persons/pic-2.png" alt="Person Image" />
+        <label class="customer-Name">Alice Tate</label>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum
+          sapiente atque, libero
+        </p>
+      </div>
+      <div class="customer-card">
+        <img class="avater" src="../assets/Persons/pic-3.png" alt="Person Image" />
+        <label class="customer-Name">Lee Phillips</label>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum
+          sapiente atque, libero
+        </p>
+      </div>
+    </div>
+    <div class="feature-section">
+      <div>
+        <label class="feature-title">Our Feature</label>
+        <span class="feature-para">See Our Facilities</span>
+      </div>
+      <div class="box-container">
+        <div class="box">
+          <img src="../assets/features/feature-img-1.png" alt="" />
+          <h3>fresh and organic</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Deserunt, earum!
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <img src="../assets/features/feature-img-2.png" alt="" />
+          <h3>free delivery</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Deserunt, earum!
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <img src="../assets/features/feature-img-3.png" alt="" />
+          <h3>easy payments</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Deserunt, earum!
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+    <div>
+      <a href="#">Info</a>
+      <a href="#">Support</a>
+      <a href="#">Marketing</a>
+    </div>
+    <div><a href="#">Terms of Use</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <label>&copy;2021 Amr M. Nouh</label>
+  </div>
+  <a id="topBtn" href="#">
+    <span class="material-icons">
+      arrow_upward
+    </span>
+  </a>
+
+  <script src="../JS/Common.js"></script>
+  <script src="../JS/HomeScript.js"></script>
+  <script src="../JS/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../CSS/animate.css">
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/about.css">
+  <link type="image/x-icon" rel="shortcut icon" href="../assets/blogo.svg" />
+</head>
+
+<body>
+  <div id="header">
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img src="../assets/logo3.png" id="logo" />
+        <label class="navbar-logo-label" for="navbar-logo"><span class="inner-style">On</span>line
+          <span class="inner-style">St</span>ore</label>
+      </div>
+      <div class="navbar-menu">
+        <a class="navbar-links" href="./LandingPage.html">Home</a>
+        <a class="navbar-links" href="#">About</a>
+        <a class="navbar-links" href="./ContactUs.html">Contact Us</a>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="slider-middle">
+        <div class="slider-left" onclick="moveSlide(-1)">&#10094;</div>
+        <div class="slider-right" onclick="moveSlide(1)">&#10095;</div>
+      </div>
+      <div class="slider-buttom" onmouseover="stopSlideshow()" onmouseleave="slideShow()">
+        <span class="slider-nav" onclick="slider(5)"></span>
+        <span class="slider-nav" onclick="slider(1)"></span>
+        <span class="slider-nav" onclick="slider(2)"></span>
+      </div>
+    </div>
+  </div>
+
+  <div id="body">
+    <div class="mission-section">
+      <div class="mission-text">
+        <label>OUR MISSION</label>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis assumenda id voluptas asperiores commodi
+          officiis aliquam, quis dolore! Distinctio sunt repellat incidunt quibusdam, quasi a vitae blanditiis sit atque
+          libero?
+        </p>
+      </div>
+      <div class="mission-image">
+        <img src="../assets/Rocket-pana.png" alt="company Image">
+      </div>
+    </div>
+
+    <div class="mission-section">
+      <div class="mission-image">
+        <img src="../assets/Visionary technology-amico.png" alt="company Image">
+      </div>
+      <div class="mission-text">
+        <label>OUR VISSION</label>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis assumenda id voluptas asperiores commodi
+          officiis aliquam, quis dolore! Distinctio sunt repellat incidunt quibusdam, quasi a vitae blanditiis sit atque
+          libero?
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div id="footer">
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+    <div>
+      <a href="#">Info</a>
+      <a href="#">Support</a>
+      <a href="#">Marketing</a>
+    </div>
+    <div><a href="#">Terms of Use</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <label>&copy;2021 Amr M. Nouh</label>
+  </div>
+
+  <a id="topBtn" href="#">
+    <span class="material-icons">
+      arrow_upward
+    </span>
+  </a>
+
+
+  <script src="../JS/Common.js"></script>
+  <script src="../JS/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>

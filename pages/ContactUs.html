@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../CSS/animate.css">
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/Contact.css">
+  <link type="image/x-icon" rel="shortcut icon" href="../assets/blogo.svg" />
+</head>
+
+<body>
+  <div id="header">
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img src="../assets/logo3.png" id="logo" />
+        <label class="navbar-logo-label" for="navbar-logo"><span class="inner-style">On</span>line
+          <span class="inner-style">St</span>ore</label>
+      </div>
+      <div class="navbar-menu">
+        <a class="navbar-links" href="./LandingPage.html">Home</a>
+        <a class="navbar-links" href="./About.html">About</a>
+        <a class="navbar-links" href="#">Contact Us</a>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="slider-middle">
+        <div class="slider-left" onclick="moveSlide(-1)">&#10094;</div>
+        <div class="slider-right" onclick="moveSlide(1)">&#10095;</div>
+      </div>
+      <div class="slider-buttom" onmouseover="stopSlideshow()" onmouseleave="slideShow()">
+        <span class="slider-nav" onclick="slider(5)"></span>
+        <span class="slider-nav" onclick="slider(1)"></span>
+        <span class="slider-nav" onclick="slider(2)"></span>
+      </div>
+    </div>
+  </div>
+
+  <div id="body">
+    <div class="welcome-section">
+      <h2 class="section-title">Contact Page</h2>
+      <p class="text-center">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quo vitae eum? Assumenda itaque commodi
+        blanditiis tenetur quo voluptate similique velit, veniam aspernatur? Ullam nisi nostrum magnam ducimus, iure
+        tenetur?
+      </p>
+    </div>
+
+    <div class="contact-section">
+      <div class="row">
+        <div class="col-form-group">
+          <h4 class="info-title">GET IN TOUCH</h4>
+          <form role="form" method="POST" id="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" placeholder="Name" required="">
+            </div>
+
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" placeholder="Email" required="">
+            </div>
+
+            <div class="form-group">
+              <textarea rows="5" name="message" class="form-control" placeholder="Message" required=""></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn-submit">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-contact-details">
+          <div class="address-box">
+            <h4 class="info-title">CONTACT DETAILS</h4>
+            <p class="address-box-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, possimus!
+            </p>
+            <a href="tel:080-090-0110" class="contact-link">
+              <i class="fas fa-phone contact-icon"></i>080-090-0110
+            </a>
+            <a href="mailto:info@company.co" class="contact-link">
+              <i class="fas fa-envelope contact-icon"></i>info@company.co
+            </a>
+            <div class="contact-social">
+              <a href="https://fb.com/templatemo" class="social-link"><i class="fab fa-facebook social-icon"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter social-icon"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram social-icon"></i></a>
+            </div>
+            <button type="submit" class="btn-find" onclick="showMap()">Find Us On Map</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-section" id="map">
+      <div class="map-row">
+        <div class="col-map">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3435.6814364971665!2d31.0207486848728!3d30.558303281698333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd7a1af008d87b0c6!2zMzDCsDMzJzI5LjkiTiAzMcKwMDEnMDYuOCJF!5e0!3m2!1sar!2seg!4v1639060728482!5m2!1sar!2seg"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a id="topBtn" href="#">
+    <span class="material-icons">
+      arrow_upward
+    </span>
+  </a>
+
+  <div id="footer">
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+    <div>
+      <a href="#">Info</a>
+      <a href="#">Support</a>
+      <a href="#">Marketing</a>
+    </div>
+    <div><a href="#">Terms of Use</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <label>&copy;2021 Amr M. Nouh</label>
+  </div>
+
+  <script src="../JS/contact.js"></script>
+  <script src="../JS/Common.js"></script>
+  <script src="../JS/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>

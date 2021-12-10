@@ -1,0 +1,44 @@
+#body {
+}
+
+.mission-section {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+}
+
+.mission-text {
+  display: inline-block;
+  width: 600px;
+  height: 600px;
+  background-color: #efefef;
+}
+.mission-text label {
+  display: block;
+  margin: 30px;
+  display: block;
+  font-family: "Overpass", sans-serif;
+  color: #18304b;
+  font-size: 30px;
+  font-weight: 700;
+  border-bottom: 3px solid #18304b;
+  width: fit-content;
+}
+
+.mission-text p {
+  display: block;
+  width: fit-content;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 30px;
+  line-height: 1.5;
+}
+
+.mission-image img {
+  width: 600px;
+  height: 600px;
+}
